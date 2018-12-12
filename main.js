@@ -525,6 +525,9 @@ var AppComponent = /** @class */ (function () {
             jquery__WEBPACK_IMPORTED_MODULE_1__(document).unbind('scroll');
             jquery__WEBPACK_IMPORTED_MODULE_1__('body').css({ 'overflow-y': 'visible' });
         }, 3000);
+        setTimeout(function () {
+            document.getElementById('loading').style.display = 'none';
+        }, 3500);
     };
     AppComponent.prototype.onScroll = function () {
         jquery__WEBPACK_IMPORTED_MODULE_1__('.animated').each(function () {
